@@ -287,6 +287,7 @@ function makeTdEditable(td, index) {
     case 1:
       input = document.createElement('input');
       input.type = 'text';
+      input.placeholder = 'at least 4 character';
       input.value = td.innerHTML;
       break;
 
@@ -307,7 +308,6 @@ function makeTdEditable(td, index) {
     case 3:
       input = document.createElement('input');
       input.type = 'number';
-      // input.placeholder = 'age 18 - 90';
       input.value = td.innerHTML;
       break;
 
